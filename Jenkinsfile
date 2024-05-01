@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Sonatype Scan') {
+        stage('Hello World') {
             steps {
                 script {
                   sh 'echo hello-world && sleep 10'
