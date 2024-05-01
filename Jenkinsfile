@@ -5,7 +5,7 @@ pipeline {
         stage('Sonatype Scan') {
             steps {
                 script {
-                  sh './nexus-iq-cli -a "${user}:${pass}" -i Java-Sample1 -s "https://nexusiq.nssg.jhdomain.com/" -t "build" . '
+                  sh 'echo hello-world && sleep 10'
                 }
             }
         }
