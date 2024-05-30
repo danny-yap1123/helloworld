@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                   sh 'echo hello-world && sleep 10'
-                  sh "echo ${env.Test}"
+                  echo "Folder Environment Variable: ${env.TEST}"
                 }
             }
         }
