@@ -5,8 +5,8 @@ pipeline {
         stage('Hello World') {
             steps {
                 script {
-                  sh 'echo hello-world && sleep 10'
-                  echo "Folder Environment Variable: ${env.TEST}"
+                  sh 'echo hello-world && echo dannywashere'
+                  sh "echo Folder Environment Variable: ${env.TEST}"
                 }
             }
         }
