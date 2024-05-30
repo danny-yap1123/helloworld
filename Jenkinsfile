@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                   sh 'echo hello-world && echo dannywashere'
-                  sh "echo Folder Environment Variable: ${env.JOB_NAME}"
+                  sh "echo Job Name Varialbe: ${env.JOB_NAME}"
                   def jobPath = env.JOB_NAME.split('/')
                   def folderName = jobPath[0]
                   sh "echo ${folderName}"
