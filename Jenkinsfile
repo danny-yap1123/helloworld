@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script {
                   sh 'echo hello-world && sleep 10'
+                  sh "echo ${env.Test}"
                 }
             }
         }
