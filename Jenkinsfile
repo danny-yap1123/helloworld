@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                   sh 'echo hello-world && echo dannywashere'
-                  sh "echo Folder Environment Variable: ${env.TEST}"
+                  sh "echo Folder Environment Variable: ${env.JOB_NAME}"
                 }
             }
         }
